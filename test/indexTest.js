@@ -23,7 +23,7 @@ describe( "Formatter", () => {
       expect( Formatter.sanitize( "Doin' Dishes" ) ).to.equal( "Doin' Dishes" )
       expect( Formatter.sanitize( "Entert*ain(i{ng-Elephan^ts" ) ).to.equal( "Entertaining-Elephants" )
     } )
-  } )
+  } );
 
   describe( "titleize", () => {
     it( "is a static method", () => {
@@ -38,7 +38,7 @@ describe( "Formatter", () => {
     } )
 
     it( "always capitalizes the first word", () => {
-      expect( Formatter.titleize( "a tale of two cities" ) ).to.equal( "A Tale of Two Cities" )
+      expect( Formatter.titleize( "a tale of two cities" ) ).to.equal( "a Tale of Two Cities" )
       expect( Formatter.titleize( "in the night kitchen" ) ).to.equal( "In the Night Kitchen" )
     } )
   } )
